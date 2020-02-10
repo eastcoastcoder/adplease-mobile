@@ -1,2 +1,2 @@
-# adplease
-Bot for time entry with ADP's timekeeper website.
+# adplease-mobile
+Mobile time entry front end
