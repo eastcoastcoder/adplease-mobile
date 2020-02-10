@@ -1,6 +1,6 @@
-import React, { Component } from "react";
+import React, { Component } from 'react';
 
-import GlobalContext from "./GlobalContext";
+import GlobalContext from './GlobalContext';
 
 const withGlobalState = InputComponent =>
   class extends Component {

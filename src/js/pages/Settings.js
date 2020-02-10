@@ -6,12 +6,25 @@ import MyPage from '../components/MyPage';
 const Settings = () => {
   const listViewData = [
     {
+      key: 'onExportPressed',
+      callback: () => onExportPressed(),
+      displayItems: ['Export Timesheet'],
+      type: 'alert',
+    },
+    {
       key: 'onDataClear',
       callback: () => onDataClear(),
       displayItems: ['Clear Data'],
       type: 'alert',
     },
   ];
+
+  const onExportPressed = () => {
+    // TODO: Call Alert Prompt
+    // Prompt Download OR Email
+    // Gather data
+    // Do action
+  };
 
   const onDataClear = () => {
     // TODO: Call Alert Prompt

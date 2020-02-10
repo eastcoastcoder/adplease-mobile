@@ -12,7 +12,17 @@ const DayList = ({ navigator }) => {
       <List
         dataSource={listViewData}
         renderRow={(row, idx) => (
-          <ListItem key={idx} tappable onClick={() => navigator.pushPage({ component: TimeList, props: { back: true, data: { startDate: new Date() } } })}>
+          <ListItem
+            key={idx}
+            tappable
+            onClick={() => navigator.pushPage({
+              component: TimeList,
+              props: {
+                back: true,
+                data: { startDate: new Date(), dayName: row, dayIdx: idx },
+                },
+              })}
+          >
             <div style={{ paddingTop: 20, paddingBottom: 20 }} className="center">{row}</div>
           </ListItem>)}
       />
